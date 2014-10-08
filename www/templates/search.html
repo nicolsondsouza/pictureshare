@@ -1,0 +1,22 @@
+<ion-view title="Search">
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+	<ion-content class="has-header">
+		<ul class="list">
+		    <li class="item">
+		    	Latitude : {{latitude}}
+		    </li>
+		    <li class="item">
+		    	Longitude : {{longitude}}
+		    </li>
+		    
+		</ul>
+		<a class="item item-thumbnail-left" href="#">
+			<img src="{{imageData}}">
+		</a>
+		<button ng-click="getCamera()"class="button button-block button-positive">
+			Get Picture
+		</button>
+	</ion-content>
+</ion-view>
